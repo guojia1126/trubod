@@ -1,0 +1,120 @@
+{
+  "servers": [
+    {
+      "id": "server-1",
+      "host": "47.92.193.109",
+      "port": 22,
+      "user": "ywgl",
+      "auth_type": "key",
+      "password": "",
+      "key_path": "~/.ssh/id_rsa",
+      "selected": true,
+      "passwordless": true
+    },
+    {
+      "id": "server-2",
+      "host": "47.94.104.123",
+      "port": 22,
+      "user": "ywgl",
+      "auth_type": "key",
+      "password": "",
+      "key_path": "~/.ssh/id_rsa",
+      "selected": true,
+      "passwordless": true
+    }
+  ],
+  "apps": null,
+  "middlewares": [
+    {
+      "type": "elasticsearch",
+      "version": "",
+      "remote_dir": "elasticsearch",
+      "config_file": "",
+      "cluster_nodes": null,
+      "custom_config": null,
+      "target_servers": [
+        "47.94.104.123"
+      ],
+      "selected": true
+    },
+    {
+      "type": "jdk",
+      "version": "",
+      "remote_dir": "jdk",
+      "config_file": "",
+      "cluster_nodes": null,
+      "custom_config": null,
+      "target_servers": [
+        "47.92.193.109",
+        "47.94.104.123"
+      ],
+      "selected": true
+    },
+    {
+      "type": "kafka",
+      "version": "",
+      "remote_dir": "kafka",
+      "config_file": "",
+      "cluster_nodes": null,
+      "custom_config": null,
+      "target_servers": [
+        "47.94.104.123"
+      ],
+      "selected": true
+    },
+    {
+      "type": "nacos",
+      "version": "",
+      "remote_dir": "nacos",
+      "config_file": "",
+      "cluster_nodes": null,
+      "custom_config": null,
+      "target_servers": [
+        "47.94.104.123"
+      ],
+      "selected": true
+    },
+    {
+      "type": "nginx",
+      "version": "",
+      "remote_dir": "nginx",
+      "config_file": "",
+      "cluster_nodes": null,
+      "custom_config": null,
+      "target_servers": [
+        "47.94.104.123"
+      ],
+      "selected": true
+    },
+    {
+      "type": "tdkv",
+      "version": "",
+      "remote_dir": "tdkv",
+      "config_file": "",
+      "cluster_nodes": null,
+      "custom_config": null,
+      "target_servers": [
+        "47.94.104.123"
+      ],
+      "selected": true
+    },
+    {
+      "type": "zookeeper",
+      "version": "",
+      "remote_dir": "zookeeper",
+      "config_file": "",
+      "cluster_nodes": null,
+      "custom_config": null,
+      "target_servers": [
+        "47.94.104.123"
+      ],
+      "selected": true
+    }
+  ],
+  "scan_apps_dir": "./apps",
+  "scan_infra_dir": "./infra",
+  "remote_apps_dir": "/home/ywgl/apps",
+  "remote_middleware_dir": "/home/ywgl/infra",
+  "remote_staging_dir": "/home/ywgl/package",
+  "max_parallel": 3
+}
